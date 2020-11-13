@@ -1,1 +1,6 @@
+<mat-accordion>
+    <div *ngFor= 'let result of jobList?.results'>
+        <app-announce [title] = 'result.name' [company] = 'result.company.name'></app-announce>
+    </div>
+</mat-accordion>
 

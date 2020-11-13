@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Job } from '../assets/job';
 
 
 @Injectable({
@@ -8,16 +9,17 @@ import { Observable } from 'rxjs';
 })
 export class JobService {
 
-  private url = 'https://www.themuse.com/api/public/jobs?category=Engineering&page=1';
+  private url = 'https://www.themuse.com/api/public/jobs';
 
 
   constructor(private httpClient: HttpClient) { }
 
-  // tslint:disable-next-line: typedef
-  getJobs(): Observable<any> {
-    return this.httpClient.get(this.url);
+  getJobs(): Observable<Job[]> {
+    let params1 = new HttpParams().set('category', 'Engineering');
+    params1 = params1.append('page', '0');
+
+    return this.httpClient.get<Job[]>(this.url, {params: params1});
+
   }
 
-  // tslint:disable-next-line: typedef
-  diagn() {}
 }

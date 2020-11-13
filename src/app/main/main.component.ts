@@ -12,11 +12,14 @@ export class MainComponent implements OnInit {
 
   constructor(private jobService: JobService) { }
 
-  getJobs(): void{
-    this.jobList = this.jobService.getJobs();
-  }
-
   ngOnInit(): void {
+    this.jobService.getJobs()
+    .subscribe(
+      data => {
+        console.warn(data);
+        this.jobList = data;
+      }
+    );
   }
 
 }
