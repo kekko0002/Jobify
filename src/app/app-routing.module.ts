@@ -9,7 +9,8 @@ import { CompanyDetailsComponent } from './company-details/company-details.compo
 const routes: Routes = [
   {path: 'dashboard', component: MainComponent},
   {path: 'details', component: DetailsComponent},
-  {path: 'company', component: CompanyDetailsComponent}
+  {path: 'company', component: CompanyDetailsComponent},
+  {path: '',   redirectTo: '/dashboard', pathMatch: 'full'},
 
 ];
 
