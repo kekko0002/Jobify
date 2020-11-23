@@ -18,8 +18,15 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
-import {MatExpansionModule} from '@angular/material/expansion';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
+import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { FormsModule } from '@angular/forms';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +50,13 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatButtonModule,
     LayoutModule,
     MatExpansionModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatDividerModule,
+    MatListModule,
+    MatInputModule,
+    MatToolbarModule,
+    FormsModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

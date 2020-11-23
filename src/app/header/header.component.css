@@ -1,5 +1,102 @@
 .header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 2;
+    top: 0px;
     margin: 0;
     height: 100px;
-    background-color: blueviolet;
+    background-color: #9c27b0;
 }
+
+.search{
+    min-width: 200px;
+    max-width: 700px;
+    display:flex;
+    margin-left: 20px;
+}
+
+
+
+.searchbar{
+   width: 100%;
+}
+
+::ng-deep .container .mat-form-field .mat-input-element {
+    color: white;
+    
+  }
+  ::ng-deep .container .mat-form-field .mat-form-field-label {
+    color: white !important;
+    
+  }
+  ::ng-deep .container .mat-form-field .mat-form-field-underline {
+    background-color: white;
+    
+  }
+  ::ng-deep .container .mat-form-field .mat-form-field-ripple {
+    background-color: white;
+    
+  }
+  ::ng-deep .container .mat-form-field .mat-form-field-required-marker {
+    color: white;
+    
+  }
+  
+  ::ng-deep .container .mat-form-field.mat-focused .mat-form-field-label {
+    color: white !important;
+    
+  }
+  ::ng-deep .container .mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: white;
+    
+  }
+  ::ng-deep .container .mat-form-field.mat-focused .mat-form-field-required-marker {
+    color: white;
+    
+  }
+  ::ng-deep .container .mat-form-field.mat-focused .mat-input-element {
+    color: white;
+    
+  }
+  
+  ::ng-deep .container .mat-form-field.mat-form-field-invalid .mat-input-element {
+    color: white;
+    
+  }
+  ::ng-deep .container .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+    color: white !important;
+    
+  }
+  ::ng-deep .container
+    .mat-form-field.mat-form-field-invalid
+    .mat-form-field-label
+    .mat-form-field-required-marker {
+    color: white;
+    
+  }
+  ::ng-deep .container .mat-form-field.mat-form-field-invalid .mat-form-field-ripple {
+    background-color: white;
+    
+  }
+
+  ::ng-deep .container .mat-form-field-wrapper{
+    width: 800px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .icon{
+      color: white;
+      justify-self: flex-end;
+  }
+
+.mat-paginator{
+    background: transparent;
+  }
+
+
+  

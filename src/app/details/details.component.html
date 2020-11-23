@@ -1,1 +1,28 @@
-
+<div class="noContainer">
+    <div class="noContent" [innerHTML] = 'parsed.innerHTML'>
+    </div>
+    <div class="noAbout">
+        <mat-card class="noCard">
+            <mat-card-header>
+              <mat-card-title>About {{company}}</mat-card-title>
+              <mat-card-subtitle>{{info?.industries[0].name}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src={{info?.refs.f1_image}} alt="Photo of company">
+            <mat-card-content>
+              <p>
+                {{info?.description}}
+              </p>
+            </mat-card-content>
+          </mat-card>
+          <div class="noButton">
+            <a href={{url}} target="_blank" class="noA noLinkButton">
+                <button mat-raised-button color="primary" class="button">
+                    APPLY
+                    <mat-icon aria-hidden="false" aria-label="apply" class="noIcon">
+                        open_in_new
+                    </mat-icon>
+                </button>
+            </a>
+        </div>
+    </div>
+</div>

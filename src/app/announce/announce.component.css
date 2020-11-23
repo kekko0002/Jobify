@@ -7,11 +7,11 @@
 }
 
 .mat-expansion-panel{
-    margin: 10px;
+    margin: 15px 100px;
 }
 
 .mat-expansion-panel-spacing{
-    margin: 25px 5px;
+    margin: 25px 30px;
 }
 
 .title{
@@ -32,6 +32,7 @@
     flex-grow: 2;
     flex-direction: column;
     margin-right: 20px;
+    width: 300px;
 
 }
 
@@ -39,8 +40,17 @@
     width: 80%;
 }
 .details{
+    height: 50%;
     display: flex;
     flex-grow: 1;
     align-self: flex-end;
     font-style: italic;
+    justify-content: center;
+    width: 150px;
+
+}
+
+.item {
+    margin: 0 10px;
+    font-size: 12px;
 }

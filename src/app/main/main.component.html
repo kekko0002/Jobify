@@ -1,6 +1,17 @@
+<app-header (search)='setLocation($event)' (page)='setPage($event)'></app-header>
 <mat-accordion>
     <div *ngFor= 'let result of jobList?.results'>
-        <app-announce [title] = 'result.name' [company] = 'result.company.name'></app-announce>
+        <app-announce 
+        [title] = 'result.name' 
+        [company] = 'result.company.name' 
+        [level] = 'result.levels[0].short_name' 
+        [date] = 'result.publication_date' 
+        [location] = 'result.locations[0].name'
+        [value] = 'result.levels[0].short_name'
+        [content] = 'result.contents'
+        [url] = 'result.refs.landing_page'
+        [id] = 'result.company.id'>
+        </app-announce>
     </div>
 </mat-accordion>
 

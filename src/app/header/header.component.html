@@ -1,3 +1,19 @@
 <div class="header">
-    <h1>HEADER</h1>
+    <div class="container">
+    <mat-form-field class="search">
+        <mat-label>Insert Location</mat-label>
+        <input matInput type="text" [(ngModel)]="value" class="searchbar">
+        <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+          <mat-icon class="icon">close</mat-icon>
+        </button>
+        <button matSuffix *ngIf="value" mat-button mat-icon-button (click)="setLocation()">
+            <mat-icon class="icon">search</mat-icon>
+        </button>
+    </mat-form-field>
+    </div>
+    <mat-paginator
+    [length]="200"
+    [pageSize]="20"
+    (page) = "setPage($event)">
+    </mat-paginator>
 </div>
