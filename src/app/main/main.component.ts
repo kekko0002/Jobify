@@ -25,17 +25,19 @@ export class MainComponent implements OnInit {
     );
   }
 
+  // function for searchbar to search by location
   setLocation(location: string): void{
     this.location = location;
     this.getApi('0', location);
   }
 
+  // function for matpaginator to change page
   setPage(page: string): void{
     this.getApi(page, this.location);
   }
 
   ngOnInit(): void {
-    this.getApi('0', '');
+    this.getApi('0', 'Italy'); // default page with italy announces
   }
 
 }

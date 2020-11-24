@@ -11,6 +11,7 @@ export class JobService {
 
   private url = 'https://www.themuse.com/api/public/jobs';
   private cUrl = 'https://www.themuse.com/api/public/companies/';
+  // insert your API key here, leave it blank let you only do 500 calls instead of 3500
   private apiKey = '558f6079e5753b2866142f6e7e73002c0319be2c2a49e579f59515cdf0f203e8';
 
 

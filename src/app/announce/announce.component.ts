@@ -24,6 +24,7 @@ export class AnnounceComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // function to get status bar level
   getLevel(data): number{
     switch (data) {
 
@@ -50,6 +51,7 @@ export class AnnounceComponent implements OnInit {
     }
   }
 
+  // function to parse given date from API to elapsed hours/days from now
   Dateparser(date): string{
     const pDate = new Date(date);
     const nDate = new Date(Date.now());
