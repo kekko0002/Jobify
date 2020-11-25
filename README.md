@@ -4,6 +4,16 @@ Job search app Angular project.
 
 ## General information
 
+### Features
+
+Jobify is a job search application built with Angular. It has a simple dashboard that shows lots of announce of Engineering category. You can easily expand the announce clicking on it
+to have all the information about the announce and the company. You can also search for a job by location with input form in the header and go deep in your research with the paginator on the header.
+
+### Known issues
+
+Due to a problem with the API response you are not able to search for location properly. That's because even if the API call is correctly with the correct query parameters for location
+the server returns the announce with "flexible/remote" location regardless of location you inserted and i hope this'll be fixed.
+
 ### Add your api Key before start
 
 To run the app properly via `ng serve` you have to add your API key in `src\app\job.service.ts`.
