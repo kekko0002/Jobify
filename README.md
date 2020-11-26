@@ -2,6 +2,12 @@
 
 Job search app Angular project.
 
+## Before start
+
+Make sure you have npm and Angular CLI installed. To Install Angular CLI, oopen a terminal and run `npm install -g @angular/cli`.
+If you clone this app run `npm i` to install all dependencies needed for the project. After that you can run this app locally using `ng serve` command.
+To have more information about angular basic commands, [read here](#ang)
+
 ## General information
 
 ### Features
@@ -17,22 +23,22 @@ the server returns the announce with "flexible/remote" location regardless of lo
 ### Add your api Key before start
 
 To run the app properly via `ng serve` you have to add your API key in `src\app\job.service.ts`.
-You can get your API Key here `https://www.themuse.com/developers/api/v2/apps`.
+You can get your API Key [here](https://www.themuse.com/developers/api/v2/apps).
 
 ### Deployed on Firebase
 
-You can try and use the app here `https://jobify-f4df2.web.app`. The app is deployed on firebase.
+You can try and use the app [here](https://jobify-f4df2.web.app). The app is deployed on firebase.
 To getting started with firebase install firebase globally using the command `npm install -g firebase-tools`.
 After building the project you can deploy it using `ng deploy` command.
 
 ### Aesthetic and graphic features powered by Angular Material
 
 Components like `<mat-card>` are given by Angular Material.
-Visit `https://material.angular.io/guide/getting-started` to get started with angular material.
-Visit `https://material.angular.io/components/categories` to look at the components used in the app.
+Visit [this](https://material.angular.io/guide/getting-started) to get started with angular material.
+Visit [this](https://material.angular.io/components/categories) to look at the components used in the app.
 
 
-## Angular base commands
+## Angular base commands {#ang}
 
 Basic commands to run the app and creating new component are given below.
 
