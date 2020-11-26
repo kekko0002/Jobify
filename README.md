@@ -6,7 +6,7 @@ Job search app Angular project.
 
 Make sure you have npm and Angular CLI installed. To Install Angular CLI, oopen a terminal and run `npm install -g @angular/cli`.
 If you clone this app run `npm i` to install all dependencies needed for the project. After that you can run this app locally using `ng serve` command.
-To have more information about angular basic commands, [read here](#ang)
+To have more information about angular basic commands, [read here](#angular-base-commands)
 
 ## General information
 
@@ -38,7 +38,7 @@ Visit [this](https://material.angular.io/guide/getting-started) to get started w
 Visit [this](https://material.angular.io/components/categories) to look at the components used in the app.
 
 
-## Angular base commands {#ang}
+## Angular base commands
 
 Basic commands to run the app and creating new component are given below.
 
